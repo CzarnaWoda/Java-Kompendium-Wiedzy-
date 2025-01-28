@@ -51,4 +51,4 @@ java -jar NazwaPliku.jar
 ## 1.4 Dlaczego 'java -jar plik.jar' działa?
 
 Finalnie przechodzimy do tego co już wcześniej napisałem, kompiler przekształcił nasz kod na bytecode a następnie dzięki temu, że mamy zainstalowaną jave na komputerze możemy na swoim systemie operacyjnym zinterpretować kod od komplilatora i uruchomić program.
-Program, żeby działał musi posiadać plik MANIFEST.MF w archiwum .jar, który zawiera wpis Main-Class - wskazujący na główną klase programu, bez tego JVM nie wie, która klase uruchomić.
+Program, żeby działał musi posiadać plik MANIFEST.MF w archiwum .jar, który zawiera wpis Main-Class - wskazujący na główną klase programu, bez tego JVM nie wie, która klase uruchomić (w moim przypadku wygenerowała się dzięki maven).
