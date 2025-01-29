@@ -18,6 +18,8 @@ Wyobrażmy sobie, że mamy 100zł(skompilowany program). Załóżmy również, �
 ## 1.2 Bytecode
 Bytecode czyli kod bajtowy, nie jest kodem maszynowym oraz nie jest kodem w pełni czytelnym dla każdego. To swojego rodzaju stan kodu pomiędzy kodem źródłowym a kodem maszynowym. Liste instrukcji bytecode'u można zobaczyć na przykład tutaj - https://en.m.wikipedia.org/wiki/List_of_Java_bytecode_instructions. Pojawia się pewna kwestia jak już wspomniałem wcześniej bytecode jest interpretowany przez rózne systemy operacyjne ale co to dokładnie oznacza? Warto wiedzieć po prostu, że na różnych systemach operacyjnych bytecode jest wykonywany przez JVM, dzięki temu oczywiście mamy tzw. "platform-independent". Warto jeszcze dodać, że bytecode możemy zdefiniować jako instrukcje dla maszyny wirtualnej (VM). Jedyna rzecz, która moim skromnym zdaniem warto wiedzieć - JVM interpretuje bytecode do kodu natywnego za pomocą JIT (Just-In-Time), dzięki temu mamy kluczową optymalizację w nowoczesnych implementacjach JVM.
 
+Przykładowy bytecode (obfuscated):
+![bytecode](https://i.imgur.com/NMCQWqn.png)
 ## 1.3 Jak to wygląda po kompilacji kodu
 A więc, mamy prosty program, standard:
 public static void main.... { System.out.println("ByteCode"); } i powiedzmy, że chcemy aby ten program uruchomił się gdy wcześniej skompilujemy go w naszym środowisku np. IntellJ Idea na Windows'ie. 
